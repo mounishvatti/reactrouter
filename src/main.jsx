@@ -39,7 +39,7 @@ import RandomGithubUser from "./components/RandomGithubUser/RandomGithubUser.jsx
 
 // multiple ways to create routes
 
-const route = createBrowserRouter(
+const routes = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route path="" element={<Home />} />
@@ -54,6 +54,6 @@ const route = createBrowserRouter(
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={route} />
+    <RouterProvider router={routes} />
   </StrictMode>
 );
